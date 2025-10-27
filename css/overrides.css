@@ -1,0 +1,43 @@
+
+
+
+html { font-size: 16px; }
+@media (max-width: 767.98px){
+ 
+  body { font-size: clamp(0.9375rem, 1.8vw + 0.7rem, 1rem); } /* ~15px→16px */
+}
+
+h1 { font-size: clamp(1.75rem, 2.5vw + 1rem, 2.25rem); } /* ~28→36 */
+h2 { font-size: clamp(1.5rem, 2vw + 0.9rem, 1.875rem); } /* ~24→30 */
+h3 { font-size: clamp(1.25rem, 1.6vw + 0.8rem, 1.5rem); } /* ~20→24 */
+h4 { font-size: clamp(1.125rem, 1.2vw + 0.7rem, 1.25rem); }
+p, li { font-size: clamp(0.95rem, 0.4vw + 0.85rem, 1rem); line-height: 1.65; }
+
+
+.section { padding-block: clamp(24px, 5vw, 64px); }
+.card { padding: clamp(16px, 2.2vw, 24px); }
+.container { width: min(100% - 32px, 1100px); } 
+
+
+.hero img, .card img, .content img {
+  width: 100%;
+  height: auto;
+  max-height: 440px; 
+  object-fit: contain;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023.98px){
+  .grid-12 > .card { grid-column: span 6; } 
+}
+@media (min-width: 1024px){
+  .grid-12 > .card { grid-column: span 4; } 
+}
+
+
+.navbar { padding: 10px 0; }
+.menu a { padding: 6px 8px; }
+
+
+.input, .select, .textarea { padding: 10px 12px; }
+.hint { font-size: 0.8rem; }

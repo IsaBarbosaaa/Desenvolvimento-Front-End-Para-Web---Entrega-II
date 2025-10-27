@@ -1,0 +1,80 @@
+
+:root{
+  --pink-600:#db2777;
+  --purple-600:#7c3aed;
+  --indigo-600:#4f46e5;
+  --blue-600:#2563eb;
+  --cyan-600:#06b6d4;
+  --teal-600:#0d9488;
+  --green-600:#16a34a;
+  --lime-600:#65a30d;
+  --yellow-600:#ca8a04;
+  --orange-600:#f97316;
+  --red-600:#dc2626;
+}
+
+
+.text-primary{ color: var(--color-primary-700); }
+.text-inverse{ color: #fff; }
+.bg-surface{ background: var(--surface); }
+.bg-primary{ background: var(--color-primary-600); color:#fff; }
+.bg-secondary{ background: var(--color-secondary-600); color:#062a30; }
+.bg-accent{ background: var(--color-accent-600); color:#111; }
+.bg-gradient-primary{
+  background: linear-gradient(135deg, var(--color-primary-600), var(--cyan-600));
+  color:#fff;
+}
+.bg-gradient-sunset{
+  background: linear-gradient(135deg, #f59e0b, #ef4444 60%, #db2777);
+  color:#fff;
+}
+.bg-gradient-calm{
+  background: linear-gradient(135deg, #06b6d4, #4f46e5);
+  color:#fff;
+}
+
+
+.hero{
+  align-items:center;
+}
+.hero .hero-media{
+  background: linear-gradient(135deg, #e0f2fe, #eef2ff);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: clamp(12px, 2vw, 20px);
+}
+.hero .hero-media img{
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+}
+
+
+.section--primary{ background: #f8fafc; }
+.section--band{
+  background: linear-gradient(90deg, rgba(79,70,229,.08), rgba(6,182,212,.08));
+  border-block: 1px solid var(--border);
+}
+.section--dark{
+  background: var(--color-gray-900); color: #e5e7eb;
+}
+.section--dark .card{ background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.1); }
+
+
+.badge--pink{ background:#fce7f3; color:#9d174d; }
+.badge--purple{ background:#ede9fe; color:#5b21b6; }
+.badge--indigo{ background:#e0e7ff; color:#3730a3; }
+.badge--cyan{ background:#cffafe; color:#155e75; }
+.badge--teal{ background:#ccfbf1; color:#115e59; }
+.badge--lime{ background:#ecfccb; color:#3f6212; }
+.badge--orange{ background:#ffedd5; color:#9a3412; }
+
+.btn--pink{ --bg: var(--pink-600); --bg-hover:#be185d; }
+.btn--purple{ --bg: var(--purple-600); --bg-hover:#6d28d9; }
+.btn--indigo{ --bg: var(--indigo-600); --bg-hover:#4338ca; }
+.btn--cyan{ --bg: var(--cyan-600); --bg-hover:#0891b2; }
+.btn--orange{ --bg: var(--orange-600); --bg-hover:#ea580c; }
+
+
+.lead{ font-size: clamp(1rem, .6vw + .9rem, 1.125rem); color: var(--text-muted); }
+.kicker{ letter-spacing:.12em; text-transform:uppercase; font-weight:800; font-size:.85rem; color: var(--color-primary-700); }

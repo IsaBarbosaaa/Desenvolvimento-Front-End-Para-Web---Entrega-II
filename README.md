@@ -1,2 +1,9 @@
-# Desenvolvimento-Front-End-Para-Web---Entrega-II
-Cruzeiro do Sul
+
+# Plataforma para ONGs — Experiência Prática II
+
+Este repositório contém a **segunda entrega** do projeto: Plataforma para ONGs — Experiência Prática II
+
+
+
+
+

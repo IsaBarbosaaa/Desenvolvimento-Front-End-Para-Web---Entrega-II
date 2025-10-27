@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos · ONG Conecta</title>
+  <meta name="description" content="Plataforma para ONGs: projetos, voluntariado, doações e transparência.">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+<link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+<link rel="stylesheet" href="./css/overrides.css">
+<link rel="stylesheet" href="./css/theme.css">
+</head>
+<body>
+<header class="header">
+  <div class="container navbar">
+    <a class="brand" href="index.html">Instituto Solidário</a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mainMenu" id="navToggle">
+      ☰ Menu
+    </button>
+
+    <nav id="mainMenu" class="menu" aria-label="Principal">
+      <a href="index.html">Início</a>
+      <div class="dropdown">
+        <a href="#" aria-haspopup="true" aria-expanded="false">Projetos</a>
+        <div class="submenu" role="menu">
+          <a href="projetos.html#voluntariado">Voluntariado</a>
+          <a href="projetos.html#doacoes">Doações</a>
+          <a href="projetos.html#eventos">Eventos</a>
+        </div>
+      </div>
+      <a href="cadastro.html">Cadastro</a>
+    </nav>
+  </div>
+</header>
+
+  
+    <header class="site-header">
+      <a href="#conteudo" id="skip-to-content" class="badge" aria-label="Pular para o conteúdo principal">Pular para conteúdo</a>
+      <div class="logo">
+        <img src="assets/hero.svg" alt="" width="40" height="40" style="border-radius:8px">
+        <span>ONG Conecta</span>
+      </div>
+      
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html" >Início</a></li>
+        <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+        <li><a href="cadastro.html" >Cadastro</a></li>
+      </ul>
+    </nav>
+    
+    </header>
+    
+  <main id="conteudo" tabindex="-1">
+    
+<header aria-labelledby="titulo-projetos">
+  <h1 id="titulo-projetos">Projetos Sociais, Voluntariado e Doações</h1>
+  <p>Conheça nossas iniciativas, inscreva-se como voluntário e apoie financeiramente as causas.</p>
+  <figure>
+    <img src="assets/projetos.svg" alt="Ilustração de projetos sociais em andamento">
+  </figure>
+</header>
+
+<section aria-labelledby="lista-projetos" class="section container grid-12">
+  <h2 id="lista-projetos">Projetos em destaque</h2>
+  <div class="grid">
+    <article class="card col-12 md:col-6 lg:col-4" class="card" aria-labelledby="p1">
+      <span class="badge">Educação</span>
+      <h3 id="p1">Reforço Escolar Comunitário</h3>
+      <p>Aulas de apoio para crianças do ensino fundamental com foco em leitura e matemática.</p>
+    </article>
+    <article class="card col-12 md:col-6 lg:col-4" class="card" aria-labelledby="p2">
+      <span class="badge">Saúde</span>
+      <h3 id="p2">Mutirão de Saúde da Família</h3>
+      <p>Atendimentos básicos, orientações nutricionais e atividades físicas ao ar livre.</p>
+    </article>
+    <article class="card col-12 md:col-6 lg:col-4" class="card" aria-labelledby="p3">
+      <span class="badge">Meio Ambiente</span>
+      <h3 id="p3">Horta Urbana Solidária</h3>
+      <p>Produção de alimentos e educação ambiental para a comunidade local.</p>
+    </article>
+  </div>
+</section>
+
+<section aria-labelledby="voluntariado">
+  <h2 id="voluntariado">Como ser voluntário</h2>
+  <div class="card">
+    <p>Verifique as oportunidades abertas e candidate-se pelo formulário de <a href="cadastro.html">cadastro</a>. Você poderá acompanhar seu histórico e emitir certificados digitais.</p>
+    <figure>
+      <img src="assets/voluntariado.svg" alt="Pessoas colaborando em ação voluntária">
+    </figure>
+  </div>
+</section>
+
+<section aria-labelledby="doacoes">
+  <h2 id="doacoes">Como doar</h2>
+  <div class="card">
+    <p>Você pode apoiar projetos com doações únicas ou recorrentes. Acompanhe metas, progresso em tempo real e relatórios de transparência.</p>
+    <figure>
+      <img src="assets/transparencia.svg" alt="Gráfico representando transparência no uso de recursos">
+    </figure>
+  </div>
+</section>
+
+  </main>
+  
+    <footer>
+      <p>© <span id="year"></span> ONG Conecta — Transparência, Impacto e Comunidade.</p>
+      <p><small>Este é um protótipo educacional. Conteúdo fictício.</small></p>
+      <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+    </footer>
+    
+  <script src="script.js" defer></script>
+  <noscript><div class="notice" role="note">Algumas funções (como máscaras de campos) exigem JavaScript.</div></noscript>
+<div class="toast-container" id="toasts"></div>
+</body>
+</html>

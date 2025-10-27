@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Início · ONG Conecta</title>
+  <meta name="description" content="Plataforma para ONGs: projetos, voluntariado, doações e transparência.">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+<link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+<link rel="stylesheet" href="./css/overrides.css">
+<link rel="stylesheet" href="./css/theme.css">
+</head>
+<body>
+<header class="header">
+  <div class="container navbar">
+    <a class="brand" href="index.html">Instituto Solidário</a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mainMenu" id="navToggle">
+      ☰ Menu
+    </button>
+
+    <nav id="mainMenu" class="menu" aria-label="Principal">
+      <a href="index.html">Início</a>
+      <div class="dropdown">
+        <a href="#" aria-haspopup="true" aria-expanded="false">Projetos</a>
+        <div class="submenu" role="menu">
+          <a href="projetos.html#voluntariado">Voluntariado</a>
+          <a href="projetos.html#doacoes">Doações</a>
+          <a href="projetos.html#eventos">Eventos</a>
+        </div>
+      </div>
+      <a href="cadastro.html">Cadastro</a>
+    </nav>
+  </div>
+</header>
+
+  
+    <header class="site-header">
+      <a href="#conteudo" id="skip-to-content" class="badge" aria-label="Pular para o conteúdo principal">Pular para conteúdo</a>
+      <div class="logo">
+        <img src="assets/hero.svg" alt="" width="40" height="40" style="border-radius:8px">
+        <span>ONG Conecta</span>
+      </div>
+      
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="projetos.html" >Projetos</a></li>
+        <li><a href="cadastro.html" >Cadastro</a></li>
+      </ul>
+    </nav>
+    
+    </header>
+    
+  <main id="conteudo" tabindex="-1">
+    
+<section class="hero" aria-labelledby="titulo-hero">
+<div class="hero-media">
+  <div>
+    <h1 id="titulo-hero">Transparência e Impacto: a plataforma que conecta ONGs a doadores e voluntários</h1>
+    <p>Conheça nossa missão, visão e valores. Fortalecemos iniciativas sociais com tecnologia, facilitando captação de recursos, engajamento de voluntários e divulgação de projetos.</p>
+    <p>
+      <a href="projetos.html" class="badge" aria-label="Ver projetos sociais">Ver Projetos</a>
+      <a href="cadastro.html" class="badge" aria-label="Fazer cadastro para voluntariado ou apoio">Quero Participar</a>
+    </p>
+  </div>
+  <figure>
+    <img src="assets/hero.svg" alt="Ilustração representando impacto social e colaboração"></div>
+
+    <figcaption class="muted">Junte-se a nós para ampliar o impacto social.</figcaption>
+  </figure>
+</section>
+<section class="section section--band">
+  <div class="container">
+    <div class="flex flex-wrap flex-between">
+      <div>
+        <div class="kicker">Transparência</div>
+        <h3>Resultados em tempo real</h3>
+        <p class="lead">Acompanhe metas, doações e impacto com painéis abertos.</p>
+      </div>
+      <div class="flex" style="gap:12px;">
+        <a class="btn btn--indigo" href="projetos.html">Ver Projetos</a>
+        <a class="btn btn--orange" href="cadastro.html">Quero Participar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="institucional">
+  <h2 id="institucional">Quem somos</h2>
+  <div class="grid">
+    <article class="card" aria-labelledby="missao">
+      <h3 id="missao">Missão</h3>
+      <p>Promover e apoiar projetos que gerem impacto social mensurável nas comunidades.</p>
+    </article>
+    <article class="card" aria-labelledby="visao">
+      <h3 id="visao">Visão</h3>
+      <p>Ser referência em transparência e gestão no Terceiro Setor, conectando pessoas e causas.</p>
+    </article>
+    <article class="card" aria-labelledby="valores">
+      <h3 id="valores">Valores</h3>
+      <p>Ética, Transparência, Colaboração, Inclusão e Inovação.</p>
+    </article>
+  </div>
+</section>
+
+<section aria-labelledby="contato">
+  <h2 id="contato">Contato</h2>
+  <address class="card">
+    <p><strong>Email:</strong> <a href="mailto:contato@ongconecta.org">contato@ongconecta.org</a></p>
+    <p><strong>Telefone:</strong> <a href="tel:+5531999999999">+55 (31) 99999-9999</a></p>
+    <p><strong>Endereço:</strong> Rua Exemplo, 123 — Belo Horizonte/MG</p>
+  </address>
+</section>
+
+  </main>
+  
+    <footer>
+      <p>© <span id="year"></span> ONG Conecta — Transparência, Impacto e Comunidade.</p>
+      <p><small>Este é um protótipo educacional. Conteúdo fictício.</small></p>
+      <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+    </footer>
+    
+  <script src="script.js" defer></script>
+  <noscript><div class="notice" role="note">Algumas funções (como máscaras de campos) exigem JavaScript.</div></noscript>
+<div class="toast-container" id="toasts"></div>
+</body>
